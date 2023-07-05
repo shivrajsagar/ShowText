@@ -15,27 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val ll = LinearLayout(this)
-//        ll.orientation = LinearLayout.VERTICAL
-//        ll.layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-//            LinearLayout.LayoutParams.MATCH_PARENT)
-//        ll.gravity = LinearLayout.TEXT_ALIGNMENT_CENTER
-//
-//
-//        // add TextView
-//        val showTextInput = TextView(this)
-//        showTextInput.text = "Hello Guys"
-//
-//        val layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-//            LinearLayout.LayoutParams.WRAP_CONTENT)
-//        showTextInput.layoutParams = layoutParams
-//        layoutParams.setMargins(20, 20, 20, 20)
-//        layoutParams.gravity = LinearLayout.VERTICAL
-//        showTextInput.textSize = 16f
-//        showTextInput.setPadding(5, 3, 0, 3)
-//        ll.addView(showTextInput)
-
-
         val layout = findViewById<RelativeLayout>(R.id.root)
 
         // Create TextView programmatically.
