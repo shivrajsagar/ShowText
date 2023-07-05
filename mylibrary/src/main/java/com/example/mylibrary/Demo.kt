@@ -21,6 +21,10 @@ class Demo : Activity() {
 
         fun  showText1(context: Context?, view: View) {
             val llay1 = LinearLayout(context)
+            llay1.layoutParams= LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
 
             val rlp2 = RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
