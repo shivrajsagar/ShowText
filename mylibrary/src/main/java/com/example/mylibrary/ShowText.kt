@@ -8,10 +8,11 @@ import android.view.View
 import android.view.animation.Animation
 import java.io.ObjectInput
 
-object ShowText {
+object BlinkView {
 
     fun blink(view: View) {
         // adding the color to be shown
+        //.............
         val animator: ObjectAnimator = ObjectAnimator.ofInt(
             view, "backgroundColor", Color.YELLOW,
             Color.RED, Color.GREEN

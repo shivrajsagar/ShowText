@@ -8,8 +8,10 @@ import android.widget.Toast
 
 
 class Demo : Activity() {
+    lateinit var context: Context
     companion object {
-        fun showText(context: Context?, Message: String?) {
+
+        fun  showText(context: Context?, Message: String?) {
             // create LinearLayout
             val ll = LinearLayout(context!!.applicationContext)
             ll.orientation = LinearLayout.VERTICAL
