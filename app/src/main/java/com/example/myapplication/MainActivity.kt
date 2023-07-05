@@ -18,24 +18,23 @@ class MainActivity : AppCompatActivity() {
         val layout = findViewById<RelativeLayout>(R.id.root)
 
         // Create TextView programmatically.
+        val llay1 = LinearLayout(this)
+        llay1.layoutParams= LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+
+        val rlp2 = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT)
+
+
         val textView = TextView(this)
-
-        // setting height and width
-        textView.layoutParams= RelativeLayout.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT)
+        textView.layoutParams= rlp2;
         // setting text
-        textView.setText("GEEKSFORGEEKS")
+        textView.setText("Hello")
         textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40f)
-        textView.setTextColor(Color.MAGENTA)
-        // onClick the text a message will be displayed "HELLO GEEK"
-        textView.setOnClickListener()
-        {
-            Toast.makeText(this@MainActivity, "HELLO GEEK",
-                Toast.LENGTH_LONG).show()
-        }
-
-        // Add TextView to LinearLayout
-        layout ?.addView(textView)
+        textView.setTextColor(Color.BLACK)
+        llay1.addView(textView)
     }
 }

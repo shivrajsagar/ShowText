@@ -26,12 +26,9 @@ class Demo : Activity() {
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
 
-            val rlp2 = RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT)
-            rlp2.addRule(RelativeLayout.ALIGN_PARENT_TOP)
-            rlp2.addRule(RelativeLayout.ALIGN_PARENT_LEFT)
-
+            val rlp2 = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT)
 
 
             val textView = TextView(context)
@@ -41,11 +38,6 @@ class Demo : Activity() {
             textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40f)
             textView.setTextColor(Color.BLACK)
             llay1.addView(textView)
-
-
-
-
-
         }
     }
 }
