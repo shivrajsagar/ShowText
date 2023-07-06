@@ -7,8 +7,8 @@ import androidx.appcompat.widget.AppCompatTextView
 
 class CustomTextView(context: Context) : AppCompatTextView(context) {
     companion object {
-        private const val DEFAULT_TEXT_SIZE_SP = 14f
-        private const val DEFAULT_TEXT_COLOR = android.R.color.holo_red_dark
+        const val DEFAULT_TEXT_SIZE_SP = 14f
+        const val DEFAULT_TEXT_COLOR = android.R.color.holo_red_dark
     }
 
     init {
